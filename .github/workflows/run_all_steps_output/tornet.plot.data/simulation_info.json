@@ -3,7 +3,7 @@
   "num_dir_authorities": 3,
   "num_exit_circuits_ten_minutes": 150,
   "num_hs_circuits_ten_minutes": 40,
-  "num_public_relays": 6793,
+  "num_public_relays": 6729,
   "num_sampled_relays": 4,
   "num_tgen_exit_emulated_users": 75.05,
   "num_tgen_exit_markov_clients": 75,
