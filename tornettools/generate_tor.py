@@ -304,6 +304,8 @@ def __generate_torrc_relay_authority(conf_path, relays):
     torrc_file.write('TestingDirAuthVoteGuardIsStrict 1\n')
     torrc_file.write('TestingDirAuthVoteExit {}\n'.format(','.join(exit_fps)))
     torrc_file.write('TestingDirAuthVoteExitIsStrict 1\n')
+    # Ensure all relays get the Stable flag. See #123.
+    torrc_file.write('AuthDirVoteStableGuaranteeMinUptime 0\n')
 
     torrc_file.close()
 
